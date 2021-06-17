@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -42,7 +43,7 @@
             <h1 id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"></span></li>
-              <li id="description">Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -51,7 +52,10 @@
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units">°C | <a href="">°F</a></span>
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                 </div>
               </div>
             </div>
@@ -67,8 +71,8 @@
           <a
             href="https://github.com/yasminemediamacs/shecodesplus-weather-app"
             target="_blank"
-            >Open-source code
-          </a>
+            >Open-source code</a
+          >
           by Yasmine Senter
         </small>
       </div>
