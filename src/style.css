@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
+  color: #202225;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  line-height: 26px;
+  margin: 20px 0 20px;
 }
 
 ul {
@@ -16,27 +16,27 @@ ul {
 }
 
 li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  color: rgb(135, 135, 135);
+  display: inline;
+  padding-right: 5px;
   font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 li:first-letter {
   text-transform: capitalize;
 }
 
-.weather-app-wrapper {
+.container {
   max-width: 600px;
-  margin: 30px auto;
+}
+
+.weather-app-wrapper {
+  margin: 50px auto;
 }
 
 .weather-app {
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
@@ -45,10 +45,17 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
+.temperature-section {
+  margin-top: 15px;
+}
+
 .weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  margin-right: -10px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -20px;
+  left: -10px;
 }
 
 .weather-temperature strong {
@@ -69,6 +76,7 @@ li:first-letter {
   cursor: default;
 }
 
-.weather-temperature .active:hover {
+.weather-temperature .active:hover,
+.weather-temperature a:hover {
   text-decoration: none;
 }
