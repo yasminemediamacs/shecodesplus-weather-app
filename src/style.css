@@ -5,9 +5,9 @@ body {
 h1 {
   color: #202225;
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 45px;
   line-height: 26px;
-  margin: 20px 0 20px;
+  margin: 40px 0 40px;
 }
 
 ul {
@@ -56,7 +56,7 @@ a:hover {
 }
 
 .temperature-section {
-  margin-top: 15px;
+  margin-top: -10px;
 }
 
 .weather-temperature img {
