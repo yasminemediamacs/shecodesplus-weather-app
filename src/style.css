@@ -45,7 +45,7 @@ a:hover {
 }
 
 .weather-app {
-  padding: 40px 40px 50px 40px;
+  padding: 40px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   background: #cfe0e6;
@@ -105,8 +105,9 @@ a:hover {
 }
 
 .weather-forecast-date {
+  margin-top: 10px;
   font-size: 16px;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .weather-forecast-temperature {
@@ -115,4 +116,23 @@ a:hover {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+}
+
+#information {
+  height: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-temperature img {
+    margin-right: -10px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+
+  .weather-temperature strong {
+    font-size: 60px;
+  }
 }
