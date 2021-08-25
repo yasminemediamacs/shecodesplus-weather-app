@@ -55,6 +55,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.date {
+  padding-right: 0;
+}
+
 .temperature-section {
   margin-top: -10px;
 }
